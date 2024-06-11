@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d|fire-animation|anaglyph|outline|neon">
+
+    <link rel="stylesheet" href="source/styles/gcss.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
+    <title>Photo</title>
+<style>
+    
+#myImg1,
+#myImg2,
+#myImg3,
+#myImg4,
+#myImg5,
+#myImg6,
+#myImg7,
+#myImg8,
+#myImg9,
+#myImg10,
+#myImg11,
+#myImg12,
+#myImg13,
+#myImg14,
+#myImg15,
+#myImg16,
+#myImg17,
+#myImg18,
+#myImg19,
+#myImg20,
+#myImg21,
+#myImg22,
+#myImg23,
+#myImg24 {
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg1:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+#myImg6:hover {opacity: 0.7;}
+#myImg7:hover {opacity: 0.7;}
+#myImg8:hover {opacity: 0.7;}
+#myImg9:hover {opacity: 0.7;}
+#myImg10:hover {opacity: 0.7;}
+#myImg11:hover {opacity: 0.7;}
+#myImg12:hover {opacity: 0.7;}
+#myImg13:hover {opacity: 0.7;}
+#myImg14:hover {opacity: 0.7;}
+#myImg15:hover {opacity: 0.7;}
+#myImg16:hover {opacity: 0.7;}
+#myImg17:hover {opacity: 0.7;}
+#myImg18:hover {opacity: 0.7;}
+#myImg19:hover {opacity: 0.7;}
+#myImg20:hover {opacity: 0.7;}
+#myImg21:hover {opacity: 0.7;}
+#myImg22:hover {opacity: 0.7;}
+#myImg23:hover {opacity: 0.7;}
+#myImg24:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6,
+.modal7,
+.modal8,
+.modal9,
+.modal10,
+.modal11,
+.modal12,
+.modal13,
+.modal14,
+.modal15,
+.modal16,
+.modal17,
+.modal18,
+.modal19,
+.modal20,
+.modal21,
+.modal22,
+.modal23,
+.modal24
+    {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content1,
+.modal-content2,
+.modal-content3,
+.modal-content4,
+.modal-content5,
+.modal-content6,
+.modal-content7,
+.modal-content8,
+.modal-content9,
+.modal-content10,
+.modal-content11,
+.modal-content12,
+.modal-content13,
+.modal-content14,
+.modal-content15,
+.modal-content16,
+.modal-content17,
+.modal-content18,
+.modal-content19,
+.modal-content20,
+.modal-content21,
+.modal-content22,
+.modal-content23,
+.modal-content24
+    {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption1,
+#caption2,
+#caption3,
+#caption4,
+#caption5,
+#caption6,
+#caption7,
+#caption8,
+#caption9,
+#caption10,
+#caption11,
+#caption12,
+#caption13,
+#caption14,
+#caption15,
+#caption16,
+#caption17,
+#caption18,
+#caption19,
+#caption20,
+#caption21,
+#caption22,
+#caption23,
+#caption24
+{
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 5px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1,
+.modal-content2,
+.modal-content3,
+.modal-content4,
+.modal-content5,
+.modal-content6,
+.modal-content7,
+.modal-content8,
+.modal-content9,
+.modal-content10,
+.modal-content11,
+.modal-content12,
+.modal-content13,
+.modal-content14,
+.modal-content15,
+.modal-content16,
+.modal-content17,
+.modal-content18,
+.modal-content19,
+.modal-content20,
+.modal-content21,
+.modal-content22,
+.modal-content23,
+.modal-content24
+{  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption1,
+#caption2,
+#caption3,
+#caption4,
+#caption5,
+#caption6,
+#caption7,
+#caption8,
+#caption9,
+#caption10,
+#caption11,
+#caption12,
+#caption13,
+#caption14,
+#caption15,
+#caption16,
+#caption17,
+#caption18,
+#caption19,
+#caption20,
+#caption21,
+#caption22,
+#caption23,
+#caption24
+{  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+        
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close1,
+.close2, 
+.close3,
+.close4,
+.close5,
+.close6,
+.close7,
+.close8,
+.close9,
+.close10,
+.close11,
+.close12,
+.close13,
+.close14,
+.close15,
+.close16,
+.close17,
+.close18,
+.close19,
+.close20,
+.close21,
+.close22,
+.close23,
+.close24
+{
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close4:hover,
+.close4:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close5:hover,
+.close5:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close6:hover,
+.close6:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close7:hover,
+.close7:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close8:hover,
+.close8:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close9:hover,
+.close9:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close10:hover,
+.close10:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close11:hover,
+.close11:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close12:hover,
+.close12:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close13:hover,
+.close13:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close14:hover,
+.close14:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close15:hover,
+.close15:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close16:hover,
+.close16:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close17:hover,
+.close17:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close18:hover,
+.close18:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close19:hover,
+.close19:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close20:hover,
+.close20:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close21:hover,
+.close21:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close22:hover,
+.close22:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close23:hover,
+.close23:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close24:hover,
+.close24:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content1,
+.modal-content2,
+.modal-content3,
+.modal-content4,
+.modal-content5,
+.modal-content6,
+.modal-content7,
+.modal-content8,
+.modal-content9,
+.modal-content10,
+.modal-content11,
+.modal-content12,
+.modal-content13,
+.modal-content14,
+.modal-content15,
+.modal-content16,
+.modal-content17,
+.modal-content18,
+.modal-content19,
+.modal-content20,
+.modal-content21,
+.modal-content22,
+.modal-content23,
+.modal-content24
+{ width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+    
+<div class="image">
+    <img src="source/files/favicon_io/favicon-32x32.png" alt="ЛОГОТИП">
+   
+    <div class="font-effect-3d">⭐ Бототаева Гулжамал Закировна 💫</div>
+   <div class="font-effect-neon"><a href="index.html" class="alert-link">БАШЫ 👈</a></div>
+   </div>
+   <p>🎓 "М. Гапаров" жатак гимназиясы, 1986-жылкы бүтүрүүчүлөр.</p>
+
+
+<p>
+    
+<img id="myImg1" src="source/files/Img1.jpg" alt="1" width="100" height="100">
+<img id="myImg2" src="source/files/Img2.jpg" alt="2" width="100" height="100">
+<img id="myImg3" src="source/files/Img3.jpg" alt="3" width="100" height="100">
+<img id="myImg4" src="source/files/Img4.jpg" alt="4" width="100" height="100">
+<img id="myImg5" src="source/files/Img5.jpg" alt="5" width="100" height="100">
+<img id="myImg6" src="source/files/Img6.jpg" alt="6" width="100" height="100">
+<img id="myImg7" src="source/files/Img7.jpg" alt="7" width="100" height="100">
+<img id="myImg8" src="source/files/Img8.jpg" alt="8" width="100" height="100">
+<img id="myImg9" src="source/files/Img9.jpg" alt="9" width="100" height="100">
+<img id="myImg10" src="source/files/Img10.jpg" alt="10" width="100" height="100">
+<img id="myImg11" src="source/files/Img11.jpg" alt="11" width="100" height="100">
+<img id="myImg12" src="source/files/Img12.jpg" alt="12" width="100" height="100">
+<img id="myImg13" src="source/files/Img13.jpg" alt="13" width="100" height="100">
+<img id="myImg14" src="source/files/Img14.jpg" alt="14" width="100" height="100">
+<img id="myImg15" src="source/files/Img15.jpg" alt="15" width="100" height="100">
+<img id="myImg16" src="source/files/Img16.jpg" alt="16" width="100" height="100">
+<img id="myImg17" src="source/files/Img17.jpg" alt="17" width="100" height="100">
+<img id="myImg18" src="source/files/Img18.jpg" alt="18" width="100" height="100">
+<img id="myImg19" src="source/files/Img19.jpg" alt="19" width="100" height="100">
+<img id="myImg20" src="source/files/Img20.jpg" alt="20" width="100" height="100">
+<img id="myImg21" src="source/files/Img24.jpg" alt="21" width="100" height="100">
+<img id="myImg22" src="source/files/Img22.jpg" alt="22" width="100" height="100">
+<img id="myImg23" src="source/files/Img23.jpg" alt="23" width="100" height="100">
+<img id="myImg24" src="source/files/Img21.jpg" alt="24" width="100" height="100">
+
+</p>
+
+<!-- The Modal -->
+<div id="myModal1" class="modal1">
+  <span class="close1">&times;</span>
+  <img class="modal-content1" id="img01">
+  <div id="caption1"></div>
+</div>
+
+<div id="myModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <img class="modal-content2" id="img02">
+  <div id="caption2"></div>
+</div>
+
+<div id="myModal3" class="modal3">
+  <span class="close3">&times;</span>
+  <img class="modal-content3" id="img03">
+  <div id="caption3"></div>
+</div>
+<div id="myModal4" class="modal4">
+  <span class="close4">&times;</span>
+  <img class="modal-content4" id="img04">
+  <div id="caption4"></div>
+</div>
+
+<div id="myModal5" class="modal5">
+  <span class="close5">&times;</span>
+  <img class="modal-content5" id="img05">
+  <div id="caption5"></div>
+</div>
+
+<div id="myModal6" class="modal6">
+  <span class="close6">&times;</span>
+  <img class="modal-content6" id="img06">
+  <div id="caption6"></div>
+</div>
+<div id="myModal7" class="modal7">
+  <span class="close7">&times;</span>
+  <img class="modal-content7" id="img07">
+  <div id="caption7"></div>
+</div>
+
+<div id="myModal8" class="modal8">
+  <span class="close8">&times;</span>
+  <img class="modal-content8" id="img08">
+  <div id="caption8"></div>
+</div>
+
+<div id="myModal9" class="modal9">
+  <span class="close9">&times;</span>
+  <img class="modal-content9" id="img09">
+  <div id="caption9"></div>
+</div>
+
+<div id="myModal10" class="modal10">
+  <span class="close10">&times;</span>
+  <img class="modal-content10" id="img10">
+  <div id="caption10"></div>
+</div>
+
+<div id="myModal11" class="modal11">
+  <span class="close11">&times;</span>
+  <img class="modal-content11" id="img11">
+  <div id="caption11"></div>
+</div>
+
+<div id="myModal12" class="modal12">
+  <span class="close12">&times;</span>
+  <img class="modal-content12" id="img12">
+  <div id="caption12"></div>
+</div>
+
+<div id="myModal13" class="modal13">
+  <span class="close13">&times;</span>
+  <img class="modal-content13" id="img13">
+  <div id="caption13"></div>
+</div>
+
+<div id="myModal14" class="modal14">
+  <span class="close14">&times;</span>
+  <img class="modal-content14" id="img14">
+  <div id="caption14"></div>
+</div>
+
+<div id="myModal15" class="modal15">
+  <span class="close15">&times;</span>
+  <img class="modal-content15" id="img15">
+  <div id="caption15"></div>
+</div>
+
+<div id="myModal16" class="modal16">
+  <span class="close16">&times;</span>
+  <img class="modal-content16" id="img16">
+  <div id="caption16"></div>
+</div>
+
+<div id="myModal17" class="modal17">
+  <span class="close17">&times;</span>
+  <img class="modal-content17" id="img17">
+  <div id="caption17"></div>
+</div>
+
+<div id="myModal18" class="modal18">
+  <span class="close18">&times;</span>
+  <img class="modal-content18" id="img18">
+  <div id="caption18"></div>
+</div>
+
+<div id="myModal19" class="modal19">
+  <span class="close19">&times;</span>
+  <img class="modal-content19" id="img19">
+  <div id="caption19"></div>
+</div>
+
+<div id="myModal20" class="modal20">
+  <span class="close20">&times;</span>
+  <img class="modal-content20" id="img20">
+  <div id="caption20"></div>
+</div>
+
+<div id="myModal21" class="modal21">
+  <span class="close21">&times;</span>
+  <img class="modal-content21" id="img21">
+  <div id="caption21"></div>
+</div>
+
+<div id="myModal22" class="modal22">
+  <span class="close22">&times;</span>
+  <img class="modal-content22" id="img22">
+  <div id="caption22"></div>
+</div>
+
+<div id="myModal23" class="modal23">
+  <span class="close23">&times;</span>
+  <img class="modal-content23" id="img23">
+  <div id="caption23"></div>
+</div>
+
+<div id="myModal24" class="modal24">
+  <span class="close24">&times;</span>
+  <img class="modal-content24" id="img24">
+  <div id="caption24"></div>
+</div>
+
+
+<script>
+// Get the modal
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
+var modal7 = document.getElementById('myModal7');
+var modal8 = document.getElementById('myModal8');
+var modal9 = document.getElementById('myModal9');
+var modal10 = document.getElementById('myModal10');
+var modal11 = document.getElementById('myModal11');
+var modal12 = document.getElementById('myModal12');
+var modal13 = document.getElementById('myModal13');
+var modal14 = document.getElementById('myModal14');
+var modal15 = document.getElementById('myModal15');
+var modal16 = document.getElementById('myModal16');
+var modal17 = document.getElementById('myModal17');
+var modal18 = document.getElementById('myModal18');
+var modal19 = document.getElementById('myModal19');
+var modal20 = document.getElementById('myModal20');
+var modal21 = document.getElementById('myModal21');
+var modal22 = document.getElementById('myModal22');
+var modal23 = document.getElementById('myModal23');
+var modal24 = document.getElementById('myModal24');
+
+
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById('myImg1');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var img4 = document.getElementById('myImg4');
+var img5 = document.getElementById('myImg5');
+var img6 = document.getElementById('myImg6');
+var img7 = document.getElementById('myImg7');
+var img8 = document.getElementById('myImg8');
+var img9 = document.getElementById('myImg9');
+var img10 = document.getElementById('myImg10');
+var img11 = document.getElementById('myImg11');
+var img12 = document.getElementById('myImg12');
+var img13 = document.getElementById('myImg13');
+var img14 = document.getElementById('myImg14');
+var img15 = document.getElementById('myImg15');
+var img16 = document.getElementById('myImg16');
+var img17 = document.getElementById('myImg17');
+var img18 = document.getElementById('myImg18');
+var img19 = document.getElementById('myImg19');
+var img20 = document.getElementById('myImg20');
+var img21 = document.getElementById('myImg21');
+var img22 = document.getElementById('myImg22');
+var img23 = document.getElementById('myImg23');
+var img24 = document.getElementById('myImg24');
+
+var modalImg1 = document.getElementById("img01");
+var modalImg2 = document.getElementById("img02");
+var modalImg3 = document.getElementById("img03");
+var modalImg4 = document.getElementById("img04");
+var modalImg5 = document.getElementById("img05");
+var modalImg6 = document.getElementById("img06");
+var modalImg7 = document.getElementById("img07");
+var modalImg8 = document.getElementById("img08");
+var modalImg9 = document.getElementById("img09");
+var modalImg10 = document.getElementById("img10");
+var modalImg11 = document.getElementById("img11");
+var modalImg12 = document.getElementById("img12");
+var modalImg13 = document.getElementById("img13");
+var modalImg14 = document.getElementById("img14");
+var modalImg15 = document.getElementById("img15");
+var modalImg16 = document.getElementById("img16");
+var modalImg17 = document.getElementById("img17");
+var modalImg18 = document.getElementById("img18");
+var modalImg19 = document.getElementById("img19");
+var modalImg20 = document.getElementById("img20");
+var modalImg21 = document.getElementById("img21");
+var modalImg22 = document.getElementById("img22");
+var modalImg23 = document.getElementById("img23");
+var modalImg24 = document.getElementById("img24");
+
+var captionText1 = document.getElementById("caption1");
+var captionText2 = document.getElementById("caption2");
+var captionText3 = document.getElementById("caption3");
+var captionText4 = document.getElementById("caption4");
+var captionText5 = document.getElementById("caption5");
+var captionText6 = document.getElementById("caption6");
+var captionText7 = document.getElementById("caption7");
+var captionText8 = document.getElementById("caption8");
+var captionText9 = document.getElementById("caption9");
+var captionText10 = document.getElementById("caption10");
+var captionText11 = document.getElementById("caption11");
+var captionText12 = document.getElementById("caption12");
+var captionText13 = document.getElementById("caption13");
+var captionText14 = document.getElementById("caption14");
+var captionText15 = document.getElementById("caption15");
+var captionText16 = document.getElementById("caption16");
+var captionText17 = document.getElementById("caption17");
+var captionText18 = document.getElementById("caption18");
+var captionText19 = document.getElementById("caption19");
+var captionText20 = document.getElementById("caption20");
+var captionText21 = document.getElementById("caption21");
+var captionText22 = document.getElementById("caption22");
+var captionText23 = document.getElementById("caption23");
+var captionText24 = document.getElementById("caption24");
+    
+    
+img1.onclick = function(){
+  modal1.style.display = "block";
+  modalImg1.src = this.src;
+  captionText1.innerHTML = this.alt;
+}
+
+img2.onclick = function(){
+  modal2.style.display = "block";
+  modalImg2.src = this.src;
+  captionText2.innerHTML = this.alt;
+}
+
+img3.onclick = function(){
+  modal3.style.display = "block";
+  modalImg3.src = this.src;
+  captionText3.innerHTML = this.alt;
+}
+img4.onclick = function(){
+  modal4.style.display = "block";
+  modalImg4.src = this.src;
+  captionText4.innerHTML = this.alt;
+}
+
+img5.onclick = function(){
+  modal5.style.display = "block";
+  modalImg5.src = this.src;
+  captionText5.innerHTML = this.alt;
+}
+
+img6.onclick = function(){
+  modal6.style.display = "block";
+  modalImg6.src = this.src;
+  captionText6.innerHTML = this.alt;
+}
+img7.onclick = function(){
+  modal7.style.display = "block";
+  modalImg7.src = this.src;
+  captionText7.innerHTML = this.alt;
+}
+
+img8.onclick = function(){
+  modal8.style.display = "block";
+  modalImg8.src = this.src;
+  captionText8.innerHTML = this.alt;
+}
+
+img9.onclick = function(){
+  modal9.style.display = "block";
+  modalImg9.src = this.src;
+  captionText9.innerHTML = this.alt;
+}
+img10.onclick = function(){
+  modal10.style.display = "block";
+  modalImg10.src = this.src;
+  captionText10.innerHTML = this.alt;
+}
+
+img11.onclick = function(){
+  modal11.style.display = "block";
+  modalImg11.src = this.src;
+  captionText11.innerHTML = this.alt;
+}
+
+img12.onclick = function(){
+  modal12.style.display = "block";
+  modalImg12.src = this.src;
+  captionText12.innerHTML = this.alt;
+}
+img13.onclick = function(){
+  modal13.style.display = "block";
+  modalImg13.src = this.src;
+  captionText13.innerHTML = this.alt;
+}
+
+img14.onclick = function(){
+  modal14.style.display = "block";
+  modalImg14.src = this.src;
+  captionText14.innerHTML = this.alt;
+}
+
+img15.onclick = function(){
+  modal15.style.display = "block";
+  modalImg15.src = this.src;
+  captionText15.innerHTML = this.alt;
+}
+img16.onclick = function(){
+  modal16.style.display = "block";
+  modalImg16.src = this.src;
+  captionText16.innerHTML = this.alt;
+}
+
+img17.onclick = function(){
+  modal17.style.display = "block";
+  modalImg17.src = this.src;
+  captionText17.innerHTML = this.alt;
+}
+
+img18.onclick = function(){
+  modal18.style.display = "block";
+  modalImg18.src = this.src;
+  captionText18.innerHTML = this.alt;
+}
+img19.onclick = function(){
+  modal19.style.display = "block";
+  modalImg19.src = this.src;
+  captionText19.innerHTML = this.alt;
+}
+
+img20.onclick = function(){
+  modal20.style.display = "block";
+  modalImg20.src = this.src;
+  captionText20.innerHTML = this.alt;
+}
+
+img21.onclick = function(){
+  modal21.style.display = "block";
+  modalImg21.src = this.src;
+  captionText21.innerHTML = this.alt;
+    }
+
+img22.onclick = function(){
+  modal22.style.display = "block";
+  modalImg22.src = this.src;
+  captionText22.innerHTML = this.alt;
+}
+
+img23.onclick = function(){
+  modal23.style.display = "block";
+  modalImg23.src = this.src;
+  captionText23.innerHTML = this.alt;
+}
+
+img24.onclick = function(){
+  modal24.style.display = "block";
+  modalImg24.src = this.src;
+  captionText24.innerHTML = this.alt;
+}
+
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
+var span4 = document.getElementsByClassName("close4")[0];
+var span5 = document.getElementsByClassName("close5")[0];
+var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
+var span8 = document.getElementsByClassName("close8")[0];
+var span9 = document.getElementsByClassName("close9")[0];
+var span10 = document.getElementsByClassName("close10")[0];
+var span11 = document.getElementsByClassName("close11")[0];
+var span12 = document.getElementsByClassName("close12")[0];
+var span13 = document.getElementsByClassName("close13")[0];
+var span14 = document.getElementsByClassName("close14")[0];
+var span15 = document.getElementsByClassName("close15")[0];
+var span16 = document.getElementsByClassName("close16")[0];
+var span17 = document.getElementsByClassName("close17")[0];
+var span18 = document.getElementsByClassName("close18")[0];
+var span19 = document.getElementsByClassName("close19")[0];
+var span20 = document.getElementsByClassName("close20")[0];
+var span21 = document.getElementsByClassName("close21")[0];
+var span22 = document.getElementsByClassName("close22")[0];
+var span23 = document.getElementsByClassName("close23")[0];
+var span24 = document.getElementsByClassName("close24")[0];
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() { 
+  modal1.style.display = "none";
+}
+
+span2.onclick = function() { 
+  modal2.style.display = "none";
+}
+
+span3.onclick = function() { 
+  modal3.style.display = "none";
+}
+span4.onclick = function() { 
+  modal4.style.display = "none";
+}
+
+span5.onclick = function() { 
+  modal5.style.display = "none";
+}
+
+span6.onclick = function() { 
+  modal6.style.display = "none";
+}
+span7.onclick = function() { 
+  modal7.style.display = "none";
+}
+
+span8.onclick = function() { 
+  modal8.style.display = "none";
+}
+
+span9.onclick = function() { 
+  modal9.style.display = "none";
+}
+span10.onclick = function() { 
+  modal10.style.display = "none";
+}
+
+span11.onclick = function() { 
+  modal11.style.display = "none";
+}
+
+span12.onclick = function() { 
+  modal12.style.display = "none";
+}
+span13.onclick = function() { 
+  modal13.style.display = "none";
+}
+
+span14.onclick = function() { 
+  modal14.style.display = "none";
+}
+
+span15.onclick = function() { 
+  modal15.style.display = "none";
+}
+span16.onclick = function() { 
+  modal16.style.display = "none";
+}
+
+span17.onclick = function() { 
+  modal17.style.display = "none";
+}
+
+span18.onclick = function() { 
+  modal18.style.display = "none";
+}
+span19.onclick = function() { 
+  modal19.style.display = "none";
+}
+
+span20.onclick = function() { 
+  modal20.style.display = "none";
+}
+
+span21.onclick = function() { 
+  modal21.style.display = "none";
+}
+span22.onclick = function() { 
+  modal22.style.display = "none";
+}
+
+span23.onclick = function() { 
+  modal23.style.display = "none";
+}
+
+span24.onclick = function() { 
+  modal24.style.display = "none";
+}
+
+    
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</body>
+</html>
